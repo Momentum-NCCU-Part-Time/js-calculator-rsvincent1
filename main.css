@@ -1,18 +1,40 @@
-input[type="button"] {
+ auto; 
+/* input[type="text"] {
+  display: grid;
+} */
+
+.calculator {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  height: auto;
+}
+
+.calcKeys {
+  display: flex;
+  flex-wrap: wrap;
   height: 80pt;
   width: 70pt;
+}
+.key {
+  display: grid;
   background-color: rgb(137, 235, 137);
-  justify-content: center;
+  height: auto;
 }
-
-.container {
-  display: flex;
-  height: 500;
-  width: 500;
+.key_op {
+  display: grid;
+  background-color: rgb(210, 248, 210);
+  height: auto;
 }
-
-.calc_buttons {
+.box {
   height: 90px;
   width: 90px;
+}
+
+#result {
+  font-size: 2rem;
+  text-align: end;
+  background: hsl(110, 93%, 40%);
+  color: white;
 }
