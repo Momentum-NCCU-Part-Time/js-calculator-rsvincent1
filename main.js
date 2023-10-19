@@ -8,8 +8,8 @@ function display(value){
 }
 
 function solve(){
-  let outputWindow = document.getElementById("result").value
-  let eqa = eval(outputWindow)
-  document.getElementById('result').value = eqa
+
+  document.getElementById('result').value = eval(document.getElementById('result').value)
+ 
 }
 
