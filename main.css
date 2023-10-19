@@ -1,18 +1,31 @@
-input[type="button"] {
+.calcKeys {
   display: flex;
-  height: 80pt;
+  flex-wrap: wrap;
   width: 70pt;
-  background-color: rgb(137, 235, 137);
-  justify-content: center;
+  color: white;
 }
 
-.container {
-  display: flex;
-  height: 500;
-  width: 500;
+.key {
+  background-color: hsl(110, 93%, 40%);
+  height: auto;
+  border-color: white;
+}
+.key_op:hover {
+  background-color: rgb(112, 201, 112);
 }
 
-.calc_buttons {
-  height: 90px;
-  width: 90px;
+.key_op {
+  background-color: rgb(210, 248, 210);
+  height: 50px;
+  border-color: white;
+}
+
+#result {
+  font-size: 2rem;
+  text-align: end;
+  background: hsl(110, 93%, 40%);
+  color: white;
+  border-color: white;
+  height: 38pt;
+  width: 50pt;
 }

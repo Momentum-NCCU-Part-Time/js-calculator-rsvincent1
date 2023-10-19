@@ -11,45 +11,33 @@
 </head>
 
 <body>
-    <div class="container">
-        <table id="calculator">
-            <tr>
-                <td><input type="button" value="C"></td>
-                <td><input type="button" value=" "></td>
-                <!-- <td><input type="button" value=" "></td> -->
-            </tr>
-            <tr>
-                <td><input type="button" value="7"></td>
-                <td><input type="button" value="8"></td>
-                <td><input type="button" value="9"></td>
-                <td><input type="button" value="/"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="4"></td>
-                <td><input type="button" value="5"></td>
-                <td><input type="button" value="6"></td>
-                <td><input type="button" value="X"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="1"></td>
-                <td><input type="button" value="2"></td>
-                <td><input type="button" value="3"></td>
-                <td><input type="button" value="-"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="0"></td>
-                <td><input type="button" value=" "></td>
-                <td><input type="button" value="="></td>
-                <td><input type="button" value="+"></td>
+    <div class="calculator">
+        <div class="calcKeys">
+            <input class="key_op" type="button" value="C" onclick="clearScreen()" />
+            <input id="result" type="text" disabled />
+            <input class="key" type="button" value="7" onclick="display('7')" />
+            <input class="key" type="button" value="8" onclick="display('8')" />
+            <input class="key" type="button" value="9" onclick="display('9')" />
+            <input class="key_op" type="button" value="/" onclick="display('/')" />
 
-            </tr>
+            <input class="key" type="button" value="4" onclick="display('4')" />
+            <input class="key" type="button" value="5" onclick="display('5')" />
+            <input class="key" type="button" value="6" onclick="display('6')" />
+            <input class="key_op" type="button" value="x" onclick="display('*')" />
+
+            <input class="key" type="button" value="1" onclick="display('1')" />
+            <input class="key" type="button" value="2" onclick="display('2')" />
+            <input class="key" type="button" value="3" onclick="display('3')" />
+            <input class="key_op" type="button" value="-" onclick="display('-')" />
+
+            <input class="key" type="button" value="0" onclick="display('0')" />
+            <input class="key_op" type="button" value="." onclick="display('.')" />
+            <input class="key_op" type="button" value="=" onclick="solve()" />
+            <input class="key_op" type="button" value="+" onclick="display('+')" />
+
+        </div>
 
 
-            </td>
-            </tr>
 
     </div>
-
-    </table>
-
 </body>
